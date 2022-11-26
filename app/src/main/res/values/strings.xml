@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TuList!!</string>
+    <string name="description">
+        El gestor de tareas que mejor se adecúa a tus necesidades
+    </string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Abrir barra de navegación</string>
+    <string name="navigation_drawer_close">Cerrar barra de navegación</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Tareas</string>
+    <string name="menu_slideshow">Amigos</string>
+</resources>
