@@ -1,5 +1,7 @@
-package com.example.testing.gestordetareas
+package com.example.testing.gestordetareas.ui.view
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -11,6 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.testing.gestordetareas.R
 import com.example.testing.gestordetareas.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -26,10 +29,7 @@ class HomeActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarHome.toolbar)
 
-        binding.appBarHome.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_home)
@@ -42,6 +42,37 @@ class HomeActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+        binding.appBarHome.fab.setOnClickListener { view ->
+            var currentItem = navView.checkedItem!!.itemId
+            when (currentItem) {
+                R.id.nav_home -> startAction(s = "This is the home page", 1)
+                R.id.nav_gallery -> startAction(s = "This is the task page", 2)
+                R.id.nav_slideshow -> startAction("This is the friends page", 3)
+            }
+        }
+    }
+
+    private fun startAction(s: String?, action: Int = 0) {
+        fun showSnackbar(s: String?) {
+            Snackbar.make(this, binding.root, s!!, Snackbar.LENGTH_LONG).apply {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    setBackgroundTintList(getColorStateList(R.color.blue_200))
+                    setTextColor(getColorStateList(R.color.white))
+                }
+                setAction("Dismiss") {
+                    dismiss()
+                }
+                show()
+            }
+        }
+
+        when (action) {
+            1 -> showSnackbar(s)
+            2 -> showSnackbar(s)
+            3 -> startActivity(Intent(this, FriendsActivity::class.java))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

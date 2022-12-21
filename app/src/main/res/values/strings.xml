@@ -14,4 +14,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Tareas</string>
     <string name="menu_slideshow">Amigos</string>
+    <string name="sigin">Acceder</string>
+    <string name="register">Registrarse</string>
+    <string name="follow">Seguir</string>
 </resources>

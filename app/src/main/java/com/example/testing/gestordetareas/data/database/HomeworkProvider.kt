@@ -8,12 +8,4 @@ import com.example.testing.gestordetareas.data.model.Homework
 
 class HomeworkProvider {
 
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    private var homeworks = DatabaseHerlper.getHomework()
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    operator fun invoke(): List<Homework> {
-        return homeworks
-    }
 }

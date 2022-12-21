@@ -6,31 +6,28 @@ import java.time.LocalDate
 import java.util.*
 
 class Homework(
-    private var id: Int,
-    expireDate: LocalDate,
-    private var description: String,
-    private var title: String
+    var id: Int,
+    private val title: String,
+    private val expireDate: Date,
+    private val description: String
 ) :
-    Comparable<Homework> {
-    private var expireDate: LocalDate = expireDate
-        get() = expireDate
 
-    @RequiresApi(Build.VERSION_CODES.O)
-    override fun compareTo(homework: Homework): Int {
-        return when {
-            this.expireDate > homework.expireDate -> {
-                1
-            }
-            this.expireDate < homework.expireDate -> {
-                -1
-            }
-            else -> {
-                0
-            }
-        }
+    Comparable<Homework?> {
+    private val feedbacks: ArrayList<Feedback> = ArrayList()
+    private var cont: Int = 0
+    override fun toString(): String {
+        return "Titulo: $title Fecha expiracion: $expireDate Descripcion: $description"
     }
 
-    override fun toString(): String {
-        return "Tarea con id $id y titulo $title"
+    fun addFeedback(image: String?, description: String?) {
+        feedbacks.add(Feedback(++cont, image!!, description!!))
+    }
+
+    fun getFeedbacks(): ArrayList<Feedback> {
+        return feedbacks
+    }
+
+    override fun compareTo(other: Homework?): Int {
+        return expireDate.compareTo(other!!.expireDate)
     }
 }

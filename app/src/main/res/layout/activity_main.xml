@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.3"
         android:background="@drawable/bg_button"
-        android:text="Acceder"
+        android:text="@string/sigin"
         android:textColor="@color/white"
         />
     <androidx.appcompat.widget.AppCompatButton
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.2"
-        android:text="Registrarse"
+        android:text="@string/register"
         android:textColor="#025D87"
         android:background="@drawable/bg_border"/>
 

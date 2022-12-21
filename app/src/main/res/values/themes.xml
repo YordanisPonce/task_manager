@@ -13,9 +13,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/blue_200</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="welcomeActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor" tools:targetApi="l">@color/blue_200</item>
     </style>
+
     <style name="Theme.GestorDeTareas.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -28,5 +30,9 @@
     <style name="circle">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="splashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
     </style>
 </resources>

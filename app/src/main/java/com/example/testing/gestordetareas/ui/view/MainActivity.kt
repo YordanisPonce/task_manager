@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.testing.gestordetareas.HomeActivity
 import com.example.testing.gestordetareas.R
 import com.example.testing.gestordetareas.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
