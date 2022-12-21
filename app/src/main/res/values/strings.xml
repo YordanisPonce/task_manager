@@ -17,4 +17,5 @@
     <string name="sigin">Acceder</string>
     <string name="register">Registrarse</string>
     <string name="follow">Seguir</string>
+    <string name="follow_message">Estas siguiendo a</string>
 </resources>

@@ -1,26 +1,28 @@
 package com.example.testing.gestordetareas.ui.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
 import com.example.testing.gestordetareas.R
 import com.example.testing.gestordetareas.databinding.ActivityHomeBinding
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityHomeBinding
-
+    private var currenTime = 0L
+    private var time = 2000L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -84,5 +86,27 @@ class HomeActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_home)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    @SuppressLint("ResourceAsColor")
+    override fun onBackPressed() {
+        if (time + currenTime > System.currentTimeMillis()) {
+            super.onBackPressed()
+        } else {
+            currenTime = System.currentTimeMillis()
+            Snackbar.make(
+                binding.appBarHome.rootElement,
+                "Pulse de nuevo para salir",
+                Snackbar.LENGTH_LONG
+            ).apply {
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    setTextColor(getColorStateList(R.color.white))
+                    setBackgroundTintList(getColorStateList(R.color.blue_200))
+                }
+                show()
+            }
+
+        }
     }
 }

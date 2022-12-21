@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/background_user.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_follow_icon.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_following.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/splash.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_friends.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/app_bar_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/appbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/content_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/nav_header_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/user_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Yordis/AndroidStudioProjects/GestorDeTareas/app/src/main/res/drawable/bg_border.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/Yordis/AndroidStudioProjects/GestorDeTareas/app/src/main/res/drawable/bg_button.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/Yordis/AndroidStudioProjects/GestorDeTareas/app/src/main/res/drawable/border.xml" value="0.2203125" />
@@ -32,7 +46,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

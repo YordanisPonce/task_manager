@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.view.FriendsActivity">
@@ -26,9 +27,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/users"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:layout_anchor="@id/appBar"
-        app:layout_anchorGravity="bottom" />
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

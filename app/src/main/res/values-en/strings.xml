@@ -16,5 +16,6 @@
     <string name="menu_slideshow">Friends</string>
     <string name="sigin">SigIn</string>
     <string name="register">Register</string>
-    <string name="follow">Siguiendo</string>
+    <string name="follow">Follow</string>
+    <string name="follow_message">You are following to</string>
 </resources>
