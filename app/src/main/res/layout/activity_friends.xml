@@ -5,7 +5,8 @@
     android:id="@+id/coordinator_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.FriendsActivity">
+    tools:context=".ui.view.FriendsActivity"
+    android:background="@color/gray_board">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"

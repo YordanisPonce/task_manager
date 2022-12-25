@@ -4,18 +4,41 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/background_user.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/bg_board.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/bg_border.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/bg_button.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/border.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/border_radius_card.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_bell_empty.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_bell_svgrepo_com.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_close.xml" value="0.1125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_empty_page.xml" value="0.2203125" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_follow_icon.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_following.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_heart1.xml" value="0.11875" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_heart2.xml" value="0.11875" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_list.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_list_menu.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/ic_menu1.xml" value="0.1125" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/drawable/splash.xml" value="0.2203125" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_friends.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_home.xml" value="0.2" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/app_bar_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/app_bar_home.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/appbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/content_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/dashboard_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_boards.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_favorite_boards.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/fragment_slideshow.xml" value="0.10260416666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/nav_header_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/user_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/layout/user_layout.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/menu/home.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/task_manager/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Yordis/AndroidStudioProjects/GestorDeTareas/app/src/main/res/drawable/bg_border.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/Yordis/AndroidStudioProjects/GestorDeTareas/app/src/main/res/drawable/bg_button.xml" value="0.1935185185185185" />

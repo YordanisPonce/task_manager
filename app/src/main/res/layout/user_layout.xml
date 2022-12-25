@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="140dp"
-    android:clickable="false"
-    android:focusable="true"
-    android:foreground="?attr/selectableItemBackground"
+    android:layout_margin="5dp"
     app:cardCornerRadius="@dimen/cardview_default_radius"
-    app:cardElevation="@dimen/cardview_default_elevation"
-    android:layout_margin="5dp">
+    app:cardElevation="@dimen/cardview_default_elevation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/back"
@@ -35,22 +35,21 @@
             android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/cancel_dot" />
+            app:srcCompat="@drawable/ic_close" />
 
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/userPhoto"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/back"
-                android:layout_marginStart="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:adjustViewBounds="true"
-                app:shapeAppearance="@style/circle"
-               />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/circle"
+            app:srcCompat="@drawable/back" />
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -70,11 +69,11 @@
             android:id="@+id/btnfollow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_follow_icon"
+            android:drawablePadding="3dp"
             android:paddingHorizontal="10dp"
             android:paddingVertical="2dp"
             android:textColor="@color/blue_200"
-            android:drawableRight="@drawable/ic_follow_icon"
-            android:drawablePadding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/back"

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -14,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.testing.gestordetareas.R
 import com.example.testing.gestordetareas.databinding.ActivityHomeBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 
@@ -45,7 +47,6 @@ class HomeActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-
         binding.appBarHome.fab.setOnClickListener { view ->
             var currentItem = navView.checkedItem!!.itemId
             when (currentItem) {
@@ -57,22 +58,18 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun startAction(s: String?, action: Int = 0) {
-        fun showSnackbar(s: String?) {
-            Snackbar.make(this, binding.root, s!!, Snackbar.LENGTH_LONG).apply {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    setBackgroundTintList(getColorStateList(R.color.blue_200))
-                    setTextColor(getColorStateList(R.color.white))
-                }
-                setAction("Dismiss") {
-                    dismiss()
-                }
-                show()
-            }
-        }
+
 
         when (action) {
-            1 -> showSnackbar(s)
-            2 -> showSnackbar(s)
+            1 -> {
+                var dialog = BottomSheetDialog(this)
+                dialog.apply {
+                    var v = layoutInflater.inflate(R.layout.bottom_sheet_layout, null)
+                    setContentView(v)
+                    show()
+                }
+            }
+            2 -> Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
             3 -> startActivity(Intent(this, FriendsActivity::class.java))
         }
     }
