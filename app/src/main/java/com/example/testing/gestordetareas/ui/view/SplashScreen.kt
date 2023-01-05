@@ -1,10 +1,9 @@
-package com.example.testing.gestordetareas
+package com.example.testing.gestordetareas.ui.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testing.gestordetareas.ui.view.MainActivity
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

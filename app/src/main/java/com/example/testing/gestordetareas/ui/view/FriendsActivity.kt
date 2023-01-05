@@ -46,7 +46,6 @@ class FriendsActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                     dismiss()
                 }
                 show()
-
             }
         }
         var lLayout = LinearLayoutManager(this)

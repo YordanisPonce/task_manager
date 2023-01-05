@@ -21,6 +21,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="boards">Tableros</string>
-    <string name="add_board">Agregar</string>
+    <string name="add_board">Agregar tablero</string>
     <string name="favorites">Favoritos</string>
+    <string name="favorites_message">Agregado a la lista de favoritos</string>
+    <string name="empty">No se encontraron tableros favoritos</string>
+    <string name="board_not_found_message">No se encontraron tableros </string>
+
+    <!--adding new board streings-->
+    <string name="add_new">Agregar nuevo tablero</string>
+    <string name="delete_board">Eliminar tablero</string>
+    <string name="details_board">Detalles</string>
+    <string name="img_board">Adjuntar imagen</string>
+    <string name="add">Agregar</string>
+    <string name="title">Título</string>
+    <string name="empty_field">Este campo es requerido</string>
+    <string name="question">¿Se eliminara un tablero de forma permanente?</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="nothing_to_show">No hay informacion disponible sobre este tablero</string>
 </resources>
